@@ -17,7 +17,7 @@ Created by:
 
 * Game Over - when the lives run out.
 
-* picture of the game
+* **picture of the game**
 
 # The Player
 
@@ -35,9 +35,9 @@ Player Collision:
 
 * Extra life - If the player break a brick there is a chance that extra life will fall down from the brick, if the player will collect him, he will get extra life.
 
-* picture of the extra life
+* **picture of the extra life**
 
-* Ball - if the ball hits the player(plate) he ball will fly in a certain direction.
+* Ball - if the ball hits the player(plate) the ball will fly in a certain direction.
 
 # The Ball
 
