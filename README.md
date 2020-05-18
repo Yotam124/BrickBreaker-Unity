@@ -13,7 +13,7 @@ Created by:
 
 * The player should aim the plate so that the ball hits the bricks and breaks them.
 
-* The player start with 3 lives and every time the ball reach the bottom the player will start again the level the life will go down by 1.
+* The player start with 3 lives and every time the ball reach the bottom the player will start again the level and the life will go down by 1.
 
 * Game Over - when the lives run out.
 
@@ -23,7 +23,7 @@ Created by:
 
 Keyboards and Movement:
 
-The player controls the plate by clicking and dragging the mouse and decides which direction in the X-axis it will move (left or right).
+* The player controls the plate by clicking and dragging the mouse and decides which direction in the X-axis it will move (left or right).
 
 * space key - Release the ball up.
 
