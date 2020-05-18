@@ -61,7 +61,7 @@ Boundries:
 
 Panels - the game has 3 different panels:
 
-* Start Game - the first panel that the player will see at the start of the (buttons - Start Game or Quit).
+* Start Game - the first panel that the player will see at the start of the game(buttons - Start Game or Quit).
 
 * Load Level - the player will see the panel (the next level - "level X") for 3 seconds after pass the level.
 
