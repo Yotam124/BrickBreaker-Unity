@@ -53,11 +53,23 @@ Boundries:
 
 * The Ball cant get out from the screen boundaries(left,right,top)
 
+# Bricks
+
+Every brick as life points of its own that if they go down to 0, the brick will will explode.
+
+There are 2 types of bricks - "brick", and "last brick":
+
+* brick - if the player will destroy the brick, another brick will showed up with different color, and if the second brick will expload - the "last brick" will showed up in a different color.
+
+* last brick - if the player will destroy the last brick he will get 1 points to the score.
+
 # Levels
 
 * The game has 3 different levels.
 
 # Canvas
+
+When the player is playing, the score and the life points will be presented to the player in the screen.
 
 Panels - the game has 3 different panels:
 
@@ -77,6 +89,17 @@ private void RestartLevel(){
         Instantiate(levels[currLevelIndex], Vector2.zero, Quaternion.identity);
         numberOfBricks = totalLvlBricks;
         gameOver = false;
+    }
+
+```
+
+* Update score (when the player will get points)
+
+```
+    public void UpdateScore(int points)
+    {
+        score += points;
+        scoreText.text = "Score: " + score;
     }
 
 ```
