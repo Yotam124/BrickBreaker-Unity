@@ -64,6 +64,8 @@ There are 2 types of bricks - "brick", and "last brick":
 * last brick - if the player will destroy the last brick he will get 1 points to the score.
  
  animations:
+ 
+ ![WhatsApp Image 2020-05-18 at 15 24 24 (1)](https://user-images.githubusercontent.com/45067010/82213078-412fb100-991c-11ea-8d4b-81bfa3a82b45.jpeg)
 
 # Levels
 
