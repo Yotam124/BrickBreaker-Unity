@@ -33,9 +33,7 @@ Boundries:
 
 Player Collision:
 
-* Extra life - If the player break a brick there is a chance that extra life will fall down from the brick, if the player will collect him, he will get extra life.
-
-* **picture of the extra life**
+* Extra life - If the player break a brick there is a chance that extra life will fall down from the brick, if the player will collect him, he will get extra life (animation in "Bricks");
 
 * Ball - if the ball hits the player(plate) the ball will fly in a certain direction.
 
@@ -63,7 +61,7 @@ There are 2 types of bricks - "brick", and "last brick":
 
 * last brick - if the player will destroy the last brick he will get 1 points to the score.
  
- animations:
+ animations (expload last brick and extra life):
  
  ![WhatsApp Image 2020-05-18 at 15 24 24 (1)](https://user-images.githubusercontent.com/45067010/82213078-412fb100-991c-11ea-8d4b-81bfa3a82b45.jpeg)
 
