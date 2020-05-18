@@ -87,9 +87,16 @@ Panels - the game has 3 different panels:
 
 * Start Game - the first panel that the player will see at the start of the game(buttons - Start Game or Quit).
 
+![Untitle222d](https://user-images.githubusercontent.com/45067010/82214390-6de4c800-991e-11ea-9761-ac8eacd888a8.png)
+
 * Load Level - the player will see the panel (the next level - "level X") for 3 seconds after pass the level.
 
+![Unti11tled](https://user-images.githubusercontent.com/45067010/82214413-76d59980-991e-11ea-935e-667f146eb26d.png)
+
 * Game Over - after the amount of lives will fall down to 0 the player will see the Game Over panel (buttons - Play Again or Quit)
+
+![1Untitled](https://user-images.githubusercontent.com/45067010/82214356-5efe1580-991e-11ea-9c35-24bd73fc6c1f.png)
+
 
 # Game Manager
 
