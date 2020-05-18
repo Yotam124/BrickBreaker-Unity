@@ -59,7 +59,7 @@ Boundries:
 
 # Canvas
 
-Panels - the game has 3 different levels:
+Panels - the game has 3 different panels:
 
 * Start Game - the first panel that the player will see at the start of the (buttons - Start Game or Quit).
 
