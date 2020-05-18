@@ -69,6 +69,10 @@ There are 2 types of bricks - "brick", and "last brick":
 
 * The game has 3 different levels.
 
+* level 2:
+
+![Untitled](https://user-images.githubusercontent.com/45067010/82213617-2578da80-991d-11ea-990d-13e6e6656693.png)
+
 # Canvas
 
 When the player is playing, the score and the life points will be presented to the player in the screen.
