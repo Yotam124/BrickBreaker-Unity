@@ -69,9 +69,15 @@ There are 2 types of bricks - "brick", and "last brick":
 
 * The game has 3 different levels.
 
+* level 1 - the first picture.
+
 * level 2:
 
 ![Untitled](https://user-images.githubusercontent.com/45067010/82213617-2578da80-991d-11ea-990d-13e6e6656693.png)
+
+* level 3:
+
+![Untitle1d](https://user-images.githubusercontent.com/45067010/82213745-548f4c00-991d-11ea-8ae3-35c587e1bba2.png)
 
 # Canvas
 
