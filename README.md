@@ -62,6 +62,8 @@ There are 2 types of bricks - "brick", and "last brick":
 * brick - if the player will destroy the brick, another brick will showed up with different color, and if the second brick will expload - the "last brick" will showed up in a different color.
 
 * last brick - if the player will destroy the last brick he will get 1 points to the score.
+ 
+ animations:
 
 # Levels
 
