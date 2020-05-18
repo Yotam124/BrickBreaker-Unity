@@ -17,7 +17,7 @@ Created by:
 
 * Game Over - when the lives run out.
 
-* **picture of the game**
+![WhatsApp Image 2020-05-18 at 15 24 24](https://user-images.githubusercontent.com/45067010/82213265-8c49c400-991c-11ea-8daa-29b092ae85c4.jpeg)
 
 # The Player
 
