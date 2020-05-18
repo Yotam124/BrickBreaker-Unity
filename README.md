@@ -81,6 +81,58 @@ Panels - the game has 3 different panels:
 
 # Game Manager
 
+* parameters:
+```
+public class GameManager : MonoBehaviour
+{
+    public int lives;                           // keeps the number of life points that the player have.
+    public int score;                           // keeps the total score.
+    public Text livesText;                      // life points in canvas.
+    public Text scoreText;                      // score in canvasa.
+    public bool gameOver;                       // boolean parameter if the game is over or not.
+    public GameObject gameOverPanel;            // the game over panel (Turn on or off).
+    public GameObject loadLevelPanel;           // the load game panel (Turn on or off).
+    public int numberOfBricks;                  // keeps the numbers of bricks that the player needs to destroy.
+    public Transform[] levels;                  // keeps the levels.
+    public int currLevelIndex = 0;              // keeps the current level index.
+    public Ball ball;                           // ball object
+    private int totalLvlBricks;                 // keeps the total bricks of the current level
+}
+```
+* Start function
+```
+    void Start()
+    {
+        livesText.text = "Lives: " + lives;
+        scoreText.text = "Score: " + score;
+        numberOfBricks = GameObject.FindGameObjectsWithTag("brick").Length + GameObject.FindGameObjectsWithTag("last brick").Length;
+        totalLvlBricks = numberOfBricks;
+    }
+
+```
+
+* Update lives function
+```
+public void UpdateLives(int changeInLives)
+    {
+        lives += changeInLives;
+
+        //check for no lives left and trigger the end of the game
+        if (lives <= 0)
+        {
+            lives = 0;
+            GameOver();
+        }
+        else if (changeInLives < 0)
+        {
+            RestartLevel();
+        }
+
+        livesText.text = "Lives: " + lives;
+    }
+
+```
+
 * Restart level
 ```
 private void RestartLevel(){
@@ -100,6 +152,63 @@ private void RestartLevel(){
     {
         score += points;
         scoreText.text = "Score: " + score;
+    }
+
+```
+
+* UpdateNumOfBricks and go to next level
+
+```
+    public void UpdateNumOfBricks()
+    {
+        numberOfBricks--;
+        if (numberOfBricks <= 0)
+        {
+            if (currLevelIndex >= levels.Length - 1)
+            {
+                GameOver();
+            }
+            else // next level
+            {
+                loadLevelPanel.SetActive(true);
+                loadLevelPanel.GetComponentInChildren<Text>().text = "Level " + (currLevelIndex +2);
+                gameOver = true;
+                ball.newLevel();
+                Invoke("LoadLevel" , 3f);
+            }
+        }
+    }
+
+```
+
+* GameOver function
+
+```
+        void GameOver()
+    {
+        gameOver = true;
+        ball.newLevel();
+        gameOverPanel.SetActive(true);
+    }
+
+```
+
+* Play again function
+
+```
+public void PlayAgain()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+```
+
+* Quit function
+
+```
+public void Quit()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
 ```
